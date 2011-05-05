@@ -21,12 +21,14 @@ for instructions.
 
     twim 
 
-This will invoke vim, where you can compose your tweet. Look at the Vim status
-line to see how many characters you have left before reaching the character
-limit.
+This will invoke vim, where you can compose your tweet. Look at the Vim
+status line to see how many characters you have left before reaching the
+character limit.
 
-If you paste or type in a long URL, `twim` can convert it into a TinyURL. Just
-put the cursor somewhere on the URL and type 
+To post the tweet, exit vim with `:wq`. To abort, exit with `:q!`. 
+
+If you paste or type in a long URL, `twim` can condense it into a
+TinyURL. Just put the cursor somewhere on the URL and type 
 
     <Leader>,
     
