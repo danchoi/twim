@@ -38,7 +38,12 @@ TinyURL. Just put the cursor somewhere on the URL and type
 (That's the leader key followed by a comma). Note that this feature
 assumes you have `curl` installed on your system.
 
+
 # About
+
+If you like `twim`, try [twail][twail].
+
+[twail]:https://github.com/danchoi/twail
 
 Twim is really just a convenience wrapper around the awesome [twurl][twurl]
 program.
