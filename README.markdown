@@ -30,6 +30,8 @@ character limit.
 
 To post the tweet, exit vim with `:wq`. To abort, exit with `:q!`. 
 
+# Turning URLs into TinyURLs
+
 If you paste or type in a long URL, `twim` can condense it into a
 TinyURL. Just put the cursor somewhere on the URL and type 
 
