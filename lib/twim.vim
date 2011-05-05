@@ -13,7 +13,7 @@ endfunction
 
 function! TwimStatusLine()
   let filled = CountChars()
-  let remaining = 130 - filled
+  let remaining = 140 - filled
   let line = "%<Number of characters: " . filled . " Remaining: " . remaining . " %r%=%-14.(%l,%c%V%)\ %P"
   return line
 endfunc
