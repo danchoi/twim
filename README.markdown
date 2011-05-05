@@ -2,7 +2,7 @@
 
 `twim` lets you post status updates to your Twitter from Vim.
 
-![screenshot](http://s3.amazonaws.com/twitpic/photos/full/281610331.png?AWSAccessKeyId=AKIAJF3XCCKACR3QDMOA&Expires=1303407756&Signature=tUBW3QF4%2F0Z69nq3%2FJG1C95EqUU%3D)
+![screenshot](https://github.com/danchoi/twim/raw/master/screenshot.png)
 
 
 # Installation
