@@ -32,13 +32,13 @@ To post the tweet, exit vim with `:wq`. To abort, exit with `:q!`.
 
 # Turning URLs into TinyURLs
 
-If you paste or type in a long URL, `twim` can condense it into a
+If you paste or type a long URL, `twim` can condense it into a
 TinyURL. Just put the cursor somewhere on the URL and type 
 
     <Leader>,
     
-(That's the leader key followed by a comma). Note that this feature
-assumes you have `curl` installed on your system.
+in normal mode. (That's the leader key followed by a comma). Note that
+this feature assumes you have `curl` installed on your system.
 
 
 # About
