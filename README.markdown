@@ -26,9 +26,12 @@ line to see how many characters you have left before reaching the character
 limit.
 
 If you paste or type in a long URL, `twim` can convert it into a TinyURL. Just
-put the cursor somewhere on the URL and type `<Leader>,` (the leader key
-followed by a comma). Note that this feature assumes you have `curl` install on
-your system.
+put the cursor somewhere on the URL and type 
+
+    <Leader>,
+    
+(That's the leader key followed by a comma). Note that this feature
+assumes you have `curl` installed on your system.
 
 # About
 
