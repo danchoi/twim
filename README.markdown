@@ -22,11 +22,13 @@ for instructions.
 
 # Usage
 
-    twim 
+    twim [args]
 
 This will invoke vim, where you can compose your tweet. Look at the Vim
 status line to see how many characters you have left before reaching the
 character limit.
+
+If you can pass in arguments, they will be pre-inserted in to the tweet text.
 
 To post the tweet, exit vim with `:wq`. To abort, exit with `:q!`. 
 

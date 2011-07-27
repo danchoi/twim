@@ -8,6 +8,11 @@ class Twim
       options = Twurl::CLI.parse_options ["/1/statuses/update.xml"]
       vimscript = File.expand_path '../twim.vim', __FILE__
       f = Tempfile.new('twitter-msg') 
+
+      if ARGV.size > 0
+        f.write ARGV.join(' ')
+        f.rewind
+      end
       msg = begin
               system "vim -S %s %s" % [vimscript, f.path]
               f.read
