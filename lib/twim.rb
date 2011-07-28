@@ -13,9 +13,11 @@ class Twim
         f.write ARGV.join(' ')
         f.rewind
       end
+
       msg = begin
               system "vim -S %s %s" % [vimscript, f.path]
-              f.read
+              # f.read # not working on OS X Lion
+              `cat #{f.path}`  
             ensure
               f.close
             end
