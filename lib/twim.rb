@@ -9,13 +9,8 @@ class Twim
       vimscript = File.expand_path '../twim.vim', __FILE__
       f = Tempfile.new('twitter-msg') 
 
-      if ARGV.size > 0
-        f.write ARGV.join(' ')
-        f.rewind
-      end
-
       msg = begin
-              system "vim -S %s %s" % [vimscript, f.path]
+              system %Q|vim -S %s -c "normal i#{ARGV.join(' ')}" %s| % [vimscript, f.path]
               # f.read # not working on OS X Lion
               `cat #{f.path}`  
             ensure
