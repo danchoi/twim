@@ -14,7 +14,7 @@ endfunction
 function! TwimStatusLine()
   let filled = CountChars()
   let remaining = 140 - filled
-  let line = "%<Number of characters: " . filled . " Remaining: " . remaining . " %r%=%-14.(%l,%c%V%)\ %P"
+  let line =  "%<Press ".g:mapleader.", to compress url under cursor.  [ Number of characters: " . filled . "  Remaining: " . remaining . " ]  %r%=%-14.(%l,%c%V%)\ %P"
   return line
 endfunc
 
@@ -29,10 +29,7 @@ endfunc
 
 
 set textwidth=72
+set laststatus=2
 setlocal statusline=%!TwimStatusLine()
 
 noremap <silent> <buffer> <leader>, <Esc>:call TinyUrl()<CR>
-
-
-
-
