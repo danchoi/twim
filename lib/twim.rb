@@ -5,7 +5,7 @@ require 'tempfile'
 class Twim
   class << self
     def run
-      options = Twurl::CLI.parse_options ["/1/statuses/update.xml"]
+      options = Twurl::CLI.parse_options ["/1.1/statuses/update.json"]
       vimscript = File.expand_path '../twim.vim', __FILE__
       f = Tempfile.new('twitter-msg') 
 
